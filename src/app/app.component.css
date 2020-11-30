@@ -8,6 +8,11 @@ p {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
+  background: #ccc;
+  display:table;
+  text-align: center;
+  vertical-align:middle;
+  display:table-cell;
 }
 
 h1,
