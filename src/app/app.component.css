@@ -14,14 +14,3 @@ h1,
 h2 {
   text-align: center;
 }
-
-img.displayed {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-div.black {
-  min-height: 10em;
-  display: table-cell;
-  vertical-align: middle;
-}

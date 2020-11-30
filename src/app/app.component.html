@@ -1,23 +1,25 @@
 <div class="back" style="background-image: url(https://i.ytimg.com/vi/9Q-xC9Hy6wU/maxresdefault.jpg)">
-  <h1>Avaliação P2</h1>
-  <img class="center"
+	<div class="box">
+		<h1>Avaliação P2</h1>
+		<img
     src="https://i.pinimg.com/236x/a9/a9/c2/a9a9c25a939cf32af2f7b0287ff2e72c.jpg"
     alt="Eliude"
   />
 
-  <h2>Eliude de Lima Felizindo</h2>
-  <h2>RA: 0050831811008</h2>
-  <h2><a href="https://github.com/Eliudelima/">Perfil no GitHub</a></h2>
+		<h2>Eliude de Lima Felizindo</h2>
+		<h2>RA: 0050831811008</h2>
+		<h2><a href="https://github.com/Eliudelima/">Perfil no GitHub</a></h2>
 
-  <hr />
-  <a [routerLink]="['/bitcoin']">Bitcoin</a> |
-  <a [routerLink]="['/carteira']">Carteira</a>&nbsp;
-  <span style="color:red" *ngIf="bitcoinService.getValorizacao()<0">
+		<hr />
+		<a [routerLink]="['/bitcoin']">Bitcoin</a> |
+		<a [routerLink]="['/carteira']">Carteira</a>&nbsp;
+		<span  style="color:red" *ngIf="bitcoinService.getValorizacao()<0">
     ↓{{bitcoinService.getValorizacao() | number}}%
   </span>
-  <span style="color:green" *ngIf="bitcoinService.getValorizacao()>0">
+		<span style="color:green" *ngIf="bitcoinService.getValorizacao()>0">
     ↑{{bitcoinService.getValorizacao() | number}}%
   </span>
-  <hr />
-  <router-outlet></router-outlet>
+		<hr />
+		<router-outlet></router-outlet>
+	</div>
 </div>
