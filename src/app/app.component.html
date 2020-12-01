@@ -12,7 +12,7 @@
 
 		<hr />
 		<a [routerLink]="['/bitcoin']">Bitcoin</a> |
-		<a [routerLink]="['/loogin']">Login</a> |
+		<a [routerLink]="['/login']">Login</a> |
 		<a [routerLink]="['/carteira']">Carteira</a>&nbsp;
 		<span style="color:red" *ngIf="bitcoinService.getValorizacao()<0">
       ↓{{bitcoinService.getValorizacao() | number}}%
