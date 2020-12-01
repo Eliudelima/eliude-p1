@@ -1,5 +1,5 @@
 import { Component, VERSION } from "@angular/core";
-import { BitcoinService } from "./bitcoin.service";
+import { AuthService } from "./auth.service";
 
 @Component({
   selector: "my-app",
@@ -7,7 +7,25 @@ import { BitcoinService } from "./bitcoin.service";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  name = "Angular " + VERSION.major;
+  name = "Angular Fire " + VERSION.major;
 
-  constructor(public bitcoinService: BitcoinService) {}
+  email: string;
+  password: string;
+
+  constructor(public authService: AuthService){}
+
+  loginWithEmail(){
+    this.authService.loginWithEmail(this.email, this.password);
+    this.email = this.password = "";
+
+  }
+
+  loginWithGoogle(){
+    this.authService.loginWithGoogle();
+  }
+
+  logout(){
+    this.authService.logout();
+  }
+
 }
