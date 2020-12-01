@@ -13,5 +13,16 @@ export class AuthService {
   constructor(public firebaseAuth: AngularFireAuth) {
     this.user = firebaseAuth.authState;
    }
+   loginWithEmail(email: string, passord: string){ 
+     let thisService = this;
+     thisService.authError = null;
+     this.firebaseAuth.signInWithEmailAndPassword(email, passord)
+     .then(value => (
+       console.log("Logado com email e senha");
+      }).catch(function(error){
+        console.log(error.message);
+        thisService.authError = error;
+      });
+    }
 
 }
