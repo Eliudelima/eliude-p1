@@ -13,6 +13,7 @@ import { BircoinService } from "./bircoin.service";
 import { BitcoinService } from "./bitcoin.service";
 import { HttpClientModule } from "@angular/common/http";
 import { AuthService } from "./auth.service";
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { AuthService } from "./auth.service";
     AngularFireAuthModule,
     RouterModule.forRoot([
       { path: "bitcoin", component: BitcoinComponent },
+       { path: "login", component: LoginComponent },
       { path: "carteira", component: MinhaCarteiraComponent }
     ])
   ],
@@ -38,7 +40,8 @@ import { AuthService } from "./auth.service";
     AppComponent,
     HelloComponent,
     BitcoinComponent,
-    MinhaCarteiraComponent
+    MinhaCarteiraComponent,
+    LoginComponent
   ],
   bootstrap: [AppComponent],
   providers: [BircoinService, BitcoinService, AuthService]
