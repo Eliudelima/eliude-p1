@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import * as auth0 from "auth0-js";
 
 import { AuthService } from "./auth.service";
 
@@ -8,7 +9,6 @@ import { AuthService } from "./auth.service";
   styleUrls: ["./login.component.css"]
 })
 export class LoginComponent implements OnInit {
-  
   email: string;
   password: string;
 

@@ -15,6 +15,7 @@
     "@angular/platform-browser-dynamic": "^10.0.9",
     "@angular/router": "^10.0.9",
     "@ng-bootstrap/ng-bootstrap": "^8.0.0",
+    "auth0-js": "^9.14.0",
     "bootswatch": "^4.5.3",
     "firebase": "^7.0.0 || ^8.0.0",
     "rxjs": "^6.6.2",
