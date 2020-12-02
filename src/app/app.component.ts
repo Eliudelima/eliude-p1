@@ -1,9 +1,6 @@
 import { Component, VERSION } from "@angular/core";
 import { BitcoinService } from "./bitcoin.service";
-import { AuthService } from "./auth.service";
 
-import firebase from "firebase/app";
-import { AngularFireAuth } from "@angular/fire/auth";
 
 @Component({
   selector: "my-app",
@@ -13,24 +10,7 @@ import { AngularFireAuth } from "@angular/fire/auth";
 export class AppComponent {
   name = "Angular";
 
-  email: string;
-  password: string;
-  authService: any;
+ 
 
-  constructor(
-    public bitcoinService: BitcoinService,
-    authService: AuthService
-  ) {}
-
-  loginWithEmail() {
-    this.authService.loginWithEmail(this.email, this.password);
-    this.email = this.password = "";
-  }
-  loginWithGoogle() {
-    this.authService.loginWithGoogle();
-  }
-
-  logout() {
-    this.authService.logout();
-  }
+  
 }
