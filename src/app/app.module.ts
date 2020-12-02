@@ -8,12 +8,12 @@ import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { BitcoinComponent } from "./bitcoin/bitcoin.component";
 import { MinhaCarteiraComponent } from "./minha-carteira/minha-carteira.component";
+import { LoginComponent } from "./login/login.component";
 import { RouterModule } from "@angular/router";
 import { BircoinService } from "./bircoin.service";
 import { BitcoinService } from "./bitcoin.service";
 import { HttpClientModule } from "@angular/common/http";
 import { AuthService } from "./auth.service";
-import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -32,7 +32,7 @@ import { LoginComponent } from './login/login.component';
     AngularFireAuthModule,
     RouterModule.forRoot([
       { path: "bitcoin", component: BitcoinComponent },
-       { path: "login", component: LoginComponent },
+      { path: "login", component: LoginComponent },
       { path: "carteira", component: MinhaCarteiraComponent }
     ])
   ],

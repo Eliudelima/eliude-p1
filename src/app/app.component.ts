@@ -9,8 +9,4 @@ import { BitcoinService } from "./bitcoin.service";
 })
 export class AppComponent {
   name = "Angular";
-
- 
-
-  
 }
