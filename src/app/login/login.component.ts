@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import * as auth0 from "auth0-js";
 
 import { AuthService } from "./auth.service";
 
