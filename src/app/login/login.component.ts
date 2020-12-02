@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   email: string;
   password: string;
-
+  
 
 
   constructor(public.authService: AuthService) {}
@@ -29,5 +29,5 @@ export class LoginComponent implements OnInit {
     this.authService.logout();
   }
 
-  ngOnInit() {}
+  
 }
