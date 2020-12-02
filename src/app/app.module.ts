@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 import { AngularFireModule } from "@angular/fire";
-import { AngularFireAuthModule } from "@angular/fire/auth"
+import { AngularFireAuthModule } from "@angular/fire/auth";
 
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
@@ -12,16 +12,14 @@ import { RouterModule } from "@angular/router";
 import { BircoinService } from "./bircoin.service";
 import { BitcoinService } from "./bitcoin.service";
 import { HttpClientModule } from "@angular/common/http";
-import { AuthService } from './auth.service';
-import { LoginComponent } from './login/login.component';
+import { AuthService } from "./auth.service";
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(
-    {
+    AngularFireModule.initializeApp({
       apiKey: "AIzaSyA6yrOySvrmTd55-hYouYOdY-7xoy9C69g",
       authDomain: "eliudep1.firebaseapp.com",
       databaseURL: "https://eliudep1.firebaseio.com",
@@ -33,7 +31,6 @@ import { LoginComponent } from './login/login.component';
     AngularFireAuthModule,
     RouterModule.forRoot([
       { path: "bitcoin", component: BitcoinComponent },
-      { path: "login", component: LoginComponent },
       { path: "carteira", component: MinhaCarteiraComponent }
     ])
   ],
@@ -41,8 +38,7 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     HelloComponent,
     BitcoinComponent,
-    MinhaCarteiraComponent,
-    LoginComponent
+    MinhaCarteiraComponent
   ],
   bootstrap: [AppComponent],
   providers: [BircoinService, BitcoinService, AuthService]
