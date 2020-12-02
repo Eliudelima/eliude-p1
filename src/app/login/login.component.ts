@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import firebase from "firebase/app";
 
-import { AngularFireAuthModule } from "@angular/fire/auth"
 
 @Component({
   selector: "app-login",
