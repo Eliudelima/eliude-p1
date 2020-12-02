@@ -1,21 +1,20 @@
 import { Component, OnInit } from "@angular/core";
-import firebase from "firebase/app";
+
+import { AngularFireAuth } from "@angular/fire/auth";
 
 
 @Component({
-  selector: "app-login",
-  templateUrl: "./login.component.html",
-  styleUrls: ["./login.component.css"]
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
 
   email: string;
   password: string;
-  authService: any;
+
 
   constructor(public.authService: AuthService) {}
-
-  constructor(public bitcoinService: BitcoinService) {}
 
   loginWithEmail() {
     this.authService.loginWithEmail(this.email, this.password);
