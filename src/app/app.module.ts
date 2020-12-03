@@ -33,8 +33,8 @@ import { AuthService } from "./auth.service";
     RouterModule.forRoot([
       { path: "bitcoin", component: BitcoinComponent },
       { path: "login", component: LoginComponent },
-      { path: "carteira", component: MinhaCarteiraComponent },
-      { path: "AuthService/:index", component: AuthServiceComponent }
+      { path: "carteira", component: MinhaCarteiraComponent }
+      
     ])
   ],
   declarations: [
