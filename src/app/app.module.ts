@@ -24,7 +24,7 @@ import { RouterModule } from "@angular/router";
     FormsModule,
     RouterModule.forRoot([
       {path: '', componet: IndexComponent},
-      {path: 'firelist', componet: FirelistComponent},
+      {path: 'firelist', componet: FirelistComponent}
     ]),
     HttpClientModule,
     AngularFireModule.initializeApp({
