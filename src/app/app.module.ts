@@ -22,10 +22,6 @@ import { RouterModule } from "@angular/router";
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot([
-      {path: '', componet: IndexComponent},
-      {path: 'firelist', componet: FirelistComponent}
-    ]),
     HttpClientModule,
     AngularFireModule.initializeApp({
       apiKey: "AIzaSyA6yrOySvrmTd55-hYouYOdY-7xoy9C69g",
@@ -41,7 +37,9 @@ import { RouterModule } from "@angular/router";
     RouterModule.forRoot([
       { path: "bitcoin", component: BitcoinComponent },
       { path: "login", component: LoginComponent },
-      { path: "carteira", component: MinhaCarteiraComponent }
+      { path: "carteira", component: MinhaCarteiraComponent },
+      {path: '', componet: IndexComponent},
+      {path: 'firelist', componet: FirelistComponent}
       
     ])
   ],
