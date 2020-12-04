@@ -12,7 +12,6 @@
 
 		<hr />
 		<a [routerLink]="['/bitcoin']">Bitcoin</a> |
-		<a [routerLink]="['/login']">Login</a> |
 		<a [routerLink]="['/carteira']">Carteira</a>&nbsp;
 		<span style="color:red" *ngIf="bitcoinService.getValorizacao()<0">
       ↓{{bitcoinService.getValorizacao() | number}}%
@@ -21,6 +20,7 @@
       ↑{{bitcoinService.getValorizacao() | number}}%
     </span>
 		<hr />
+		<a [routerLink]="['/login']">Login</a>
 		<div>
 			<a [routerLink]="['']">início</a>
 			<a [routerLink]="['firelist']">Lista do Firebase</a>
