@@ -38,7 +38,7 @@ import { RouterModule } from "@angular/router";
       { path: "bitcoin", component: BitcoinComponent },
       { path: "login", component: LoginComponent },
       { path: "carteira", component: MinhaCarteiraComponent },
-      {path: '', componet: IndexComponent},
+      {path: '', component: IndexComponent},
       {path: 'firelist', componet: FirelistComponent}
       
     ])
