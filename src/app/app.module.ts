@@ -22,7 +22,7 @@ import { RouterModule } from "@angular/router";
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule,
+    HttpClientModule
     AngularFireModule.initializeApp({
       apiKey: "AIzaSyA6yrOySvrmTd55-hYouYOdY-7xoy9C69g",
       authDomain: "eliudep1.firebaseapp.com",
