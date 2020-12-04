@@ -25,7 +25,9 @@ export class FirelistComponent implements OnInit {
 
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    
+  }
 
   addItem(){
     this.listRef.push(
