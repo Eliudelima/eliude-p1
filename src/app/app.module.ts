@@ -3,6 +3,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFireDatabasehModule } from "@angular/fire/database";
 
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
@@ -36,6 +37,7 @@ import { RouterModule } from "@angular/router";
       appId: "1:584329146738:web:da2bfd8f23d037a81aedeb"
     }),
     AngularFireAuthModule,
+    AngularFireDatabaseModule
     RouterModule.forRoot([
       { path: "bitcoin", component: BitcoinComponent },
       { path: "login", component: LoginComponent },
