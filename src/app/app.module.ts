@@ -3,7 +3,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
-import { AngularFireDatabasehModule } from "@angular/fire/database";
+import { AngularFireDatabaseModule } from "@angular/fire/database";
 
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
