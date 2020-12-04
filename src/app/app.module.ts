@@ -9,16 +9,22 @@ import { HelloComponent } from "./hello.component";
 import { BitcoinComponent } from "./bitcoin/bitcoin.component";
 import { MinhaCarteiraComponent } from "./minha-carteira/minha-carteira.component";
 import { LoginComponent } from "./login/login.component";
-import { RouterModule } from "@angular/router";
 import { BircoinService } from "./bircoin.service";
 import { BitcoinService } from "./bitcoin.service";
 import { HttpClientModule } from "@angular/common/http";
 import { AuthService } from "./auth.service";
+import { FirelistComponent } from './firelist/firelist.component';
+import { IndexComponent } from './index/index.component';
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    RouterModule.forRoot([
+      {path: '', componet: IndexComponent},
+      {path: 'firelist', componet: FirelistComponent},
+    ]),
     HttpClientModule,
     AngularFireModule.initializeApp({
       apiKey: "AIzaSyA6yrOySvrmTd55-hYouYOdY-7xoy9C69g",
@@ -42,7 +48,9 @@ import { AuthService } from "./auth.service";
     HelloComponent,
     BitcoinComponent,
     MinhaCarteiraComponent,
-    LoginComponent
+    LoginComponent,
+    FirelistComponent,
+    IndexComponent
   ],
   bootstrap: [AppComponent],
   providers: [BircoinService, BitcoinService, AuthService]
