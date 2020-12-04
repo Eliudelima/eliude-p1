@@ -22,7 +22,7 @@ import { RouterModule } from "@angular/router";
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
     AngularFireModule.initializeApp({
       apiKey: "AIzaSyA6yrOySvrmTd55-hYouYOdY-7xoy9C69g",
       authDomain: "eliudep1.firebaseapp.com",
@@ -33,13 +33,13 @@ import { RouterModule } from "@angular/router";
       appId: "1:584329146738:web:da2bfd8f23d037a81aedeb"
     }),
     AngularFireAuthModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
     RouterModule.forRoot([
       { path: "bitcoin", component: BitcoinComponent },
       { path: "login", component: LoginComponent },
       { path: "carteira", component: MinhaCarteiraComponent },
       {path: '', component: IndexComponent},
-      {path: 'firelist', componet: FirelistComponent}
+      {path: 'firelist', component: FirelistComponent}
       
     ])
   ],
